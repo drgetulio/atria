@@ -1,4 +1,4 @@
-# PRD — Atria: Aplicativo de Reconhecimento da Síndrome de Alagille e Indicação de IBATs
+# PRD — Alagille: Aplicativo de Reconhecimento da Síndrome de Alagille e Indicação de IBATs
 
 > **Documento de Requisitos de Produto (Product Requirements Document)**
 > Versão 1.1 · Data: 04/06/2026 · Status: Rascunho para revisão
@@ -8,7 +8,7 @@
 
 ## ⚠️ Aviso médico-legal (a ser exibido no app)
 
-O **Atria** é uma **ferramenta de apoio à decisão clínica e educação médica**. Ele **não substitui o julgamento clínico**, não estabelece diagnóstico definitivo nem prescreve tratamento. O diagnóstico e a indicação de IBATs devem ser confirmados por gastroenterologista/hepatologista pediátrico. O conteúdo é destinado **exclusivamente a profissionais de saúde**.
+O **Alagille** é uma **ferramenta de apoio à decisão clínica e educação médica**. Ele **não substitui o julgamento clínico**, não estabelece diagnóstico definitivo nem prescreve tratamento. O diagnóstico e a indicação de IBATs devem ser confirmados por gastroenterologista/hepatologista pediátrico. O conteúdo é destinado **exclusivamente a profissionais de saúde**.
 
 ---
 
@@ -16,7 +16,7 @@ O **Atria** é uma **ferramenta de apoio à decisão clínica e educação médi
 
 A Síndrome de Alagille (ALGS) é uma doença genética rara (prevalência estimada de 1:30.000 a 1:50.000 nascidos vivos), multissistêmica, de herança autossômica dominante, causada por variantes nos genes **JAG1** (mais comum) ou **NOTCH2**, que afetam a via de sinalização Notch. No Brasil, o diagnóstico é frequentemente **tardio — ou nem acontece** — por baixa familiaridade da doença nos níveis iniciais de atenção, ausência de linha de cuidado e acesso limitado a exames-chave (dosagem de ácidos biliares séricos e painel genético não estão disponíveis no SUS).
 
-O **Atria** é um aplicativo móvel/web voltado a **médicos não especialistas** (pediatras de atenção primária, neonatologistas, médicos de família, plantonistas) para:
+O **Alagille** é um aplicativo móvel/web voltado a **médicos não especialistas** (pediatras de atenção primária, neonatologistas, médicos de família, plantonistas) para:
 
 1. **Reconhecer precocemente** sinais sugestivos de ALGS por meio de uma ferramenta estruturada baseada nos **critérios clínicos** (3 de 7 características; 2 se houver história familiar).
 2. **Orientar o encaminhamento** correto e a solicitação dos exames apropriados.
@@ -374,4 +374,4 @@ Home
 
 ---
 
-*Fim do documento — PRD Atria v1.1.*
+*Fim do documento — PRD Alagille v1.1.*

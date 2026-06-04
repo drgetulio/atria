@@ -4,7 +4,7 @@ Aplicativo de **apoio ao reconhecimento da Síndrome de Alagille (ALGS)** e à *
 
 > ⚠️ **Ferramenta de apoio à decisão e educação médica.** Não substitui o julgamento clínico, não estabelece diagnóstico definitivo nem prescreve tratamento. Destinado a profissionais de saúde. O diagnóstico e a indicação de IBATs devem ser confirmados por gastroenterologista/hepatologista pediátrico.
 
-Base científica: **Diretriz SBP nº 22 (23/01/2026)** — *Síndrome de Alagille em Pediatria no Brasil e os IBAT* — complementada por fontes de alto impacto (GeneReviews, FDA, *The Lancet*, *Hepatology*). Especificação completa em [`PRD-Atria-Alagille.md`](./PRD-Atria-Alagille.md).
+Base científica: **Diretriz SBP nº 22 (23/01/2026)** — *Síndrome de Alagille em Pediatria no Brasil e os IBAT* — complementada por fontes de alto impacto (GeneReviews, FDA, *The Lancet*, *Hepatology*). Especificação completa em [`PRD-Alagille.md`](./PRD-Alagille.md).
 
 ## Funcionalidades (MVP)
 
@@ -53,5 +53,10 @@ Cada módulo exibe a fonte e a data da última revisão.
 
 ## Ícones do PWA
 
-Adicione em `public/`: `icon-192.png`, `icon-512.png`, `icon-512-maskable.png`
-(o `favicon.svg` já está incluído).
+Os ícones (`icon-192.png`, `icon-512.png`, `icon-512-maskable.png`, `apple-touch-icon.png`)
+estão em `public/`. Para regerá-los a partir do glifo:
+
+```bash
+npm install --no-save sharp
+node scripts/gen-icons.mjs
+```
