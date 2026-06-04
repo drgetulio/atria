@@ -15,7 +15,7 @@ export function Ibat() {
           {ibat.criteria.map((c) => (
             <li className="kv" key={c.topic}>
               <span className="k">{c.topic}</span>
-              <span>{c.content}</span>
+              <span className="v">{c.content}</span>
             </li>
           ))}
         </ul>
@@ -24,9 +24,9 @@ export function Ibat() {
       <div className="card">
         <h3>Referência farmacológica</h3>
         {ibat.drugs.map((d) => (
-          <div key={d.name} style={{ paddingBottom: 10, marginBottom: 10, borderBottom: "1px solid var(--c-border)" }}>
+          <div key={d.name} className="exam-item">
             <strong>{d.name}</strong>
-            <p className="muted" style={{ margin: "4px 0" }}>
+            <p className="muted" style={{ margin: "6px 0 2px" }}>
               Indicação (FDA): {d.fdaIndication} · {d.ageLabel}
             </p>
             <p style={{ margin: 0 }}>{d.dosing}</p>

@@ -13,7 +13,6 @@ const levelLabel: Record<string, string> = {
   moderate: "Suspeição moderada",
   low: "Suspeição baixa",
 };
-const levelIcon: Record<string, string> = { high: "🔴", moderate: "🟡", low: "🟢" };
 
 export function Triage() {
   const [selected, setSelected] = useState<string[]>([]);
@@ -55,13 +54,13 @@ export function Triage() {
   return (
     <>
       <div className="card">
-        <div className="row" style={{ justifyContent: "space-between", alignItems: "center" }}>
+        <div className="spread">
           <h2 style={{ margin: 0 }}>Triagem clínica</h2>
-          <button type="button" className="term-trigger" onClick={() => setSimpleMode((v) => !v)}>
+          <button type="button" className="term-trigger toggle-link" onClick={() => setSimpleMode((v) => !v)}>
             {simpleMode ? "Ver termos técnicos" : "Ver perguntas simples"}
           </button>
         </div>
-        <p className="muted">
+        <p className="muted" style={{ marginBottom: 0 }}>
           Marque as características presentes. {criteriaContent.rule.note}
         </p>
       </div>
@@ -73,14 +72,12 @@ export function Triage() {
           return (
             <label key={c.id} className={`check-item ${isSel ? "selected" : ""}`}>
               <input type="checkbox" checked={isSel} onChange={() => toggle(c.id)} />
-              <span>
-                <span className="row" style={{ justifyContent: "space-between" }}>
+              <span className="body">
+                <span className="item-head">
                   <span className="term">{simpleMode ? c.simpleQuestion : c.term}</span>
                   <span className="freq">{c.frequency}</span>
                 </span>
-                <span className="muted">
-                  {simpleMode ? c.plain : c.howToRecognize}
-                </span>
+                <span className="desc">{simpleMode ? c.plain : c.howToRecognize}</span>
               </span>
             </label>
           );
@@ -91,16 +88,16 @@ export function Triage() {
         <h3>Fatores adicionais</h3>
         <label className="check-item">
           <input type="checkbox" checked={familyHistory} onChange={(e) => setFamilyHistory(e.target.checked)} />
-          <span>
-            <span className="term">História familiar de Síndrome de Alagille</span>
-            <span className="muted">Reduz o limiar para 2 critérios.</span>
+          <span className="body">
+            <span className="item-head"><span className="term">História familiar de Síndrome de Alagille</span></span>
+            <span className="desc">Reduz o limiar para 2 critérios.</span>
           </span>
         </label>
         <label className="check-item">
           <input type="checkbox" checked={redFlag} onChange={(e) => setRedFlag(e.target.checked)} />
-          <span>
-            <span className="term">{criteriaContent.redFlag.label}</span>
-            <span className="muted">{criteriaContent.redFlag.action}</span>
+          <span className="body">
+            <span className="item-head"><span className="term">{criteriaContent.redFlag.label}</span></span>
+            <span className="desc">{criteriaContent.redFlag.action}</span>
           </span>
         </label>
         <div className="field">
@@ -119,7 +116,7 @@ export function Triage() {
       <div className="card" aria-live="polite">
         <h3>Resultado</h3>
         <p className={`badge ${result.level}`}>
-          <span aria-hidden="true">{levelIcon[result.level]}</span>
+          <span className="dot" aria-hidden="true" />
           {levelLabel[result.level]} — {result.count} de {result.threshold} critério(s)
         </p>
         <p>{result.recommendation}</p>
@@ -136,9 +133,7 @@ export function Triage() {
       <div className="card">
         <h3>Resumo para encaminhamento</h3>
         <p className="muted">Texto sem dados pessoais — copie para a referência/contrarreferência.</p>
-        <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit", background: "#f0f8f8", padding: 12, borderRadius: 8 }}>
-          {referralText}
-        </pre>
+        <pre className="referral-box">{referralText}</pre>
         <button type="button" className="btn secondary" onClick={copyReferral}>
           {copied ? "Copiado ✓" : "Copiar resumo"}
         </button>

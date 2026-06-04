@@ -19,8 +19,15 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="appbar">
-        <span className="logo" aria-hidden="true">🩺</span>
+        <span className="mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" stroke="#fff" strokeWidth="5" strokeLinecap="round">
+            <path d="M32 14 L32 50" />
+            <path d="M16 28 C24 20 40 20 48 28" />
+            <path d="M16 40 C24 48 40 48 48 40" />
+          </svg>
+        </span>
         <h1>Alagille</h1>
+        <span className="sub">apoio ao diagnóstico</span>
       </header>
 
       <main>

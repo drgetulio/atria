@@ -32,7 +32,6 @@ export function Glossary() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="ex.: embriotóxon, colestase…"
-            style={{ width: "100%", minHeight: 44, padding: "8px 10px", border: "1px solid var(--c-border)", borderRadius: 8 }}
           />
         </div>
       </div>
@@ -40,9 +39,9 @@ export function Glossary() {
       <div className="card">
         <ul className="list-reset">
           {filtered.map((t) => (
-            <li key={t.id} style={{ paddingBottom: 10, marginBottom: 10, borderBottom: "1px solid var(--c-border)" }}>
+            <li key={t.id} className="exam-item">
               <strong>{t.term}</strong>
-              <p style={{ margin: "4px 0" }}>{t.plain}</p>
+              <p style={{ margin: "6px 0 2px" }}>{t.plain}</p>
               <p className="muted" style={{ margin: 0 }}>Como reconhecer: {t.recognize}</p>
             </li>
           ))}

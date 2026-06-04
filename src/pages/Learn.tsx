@@ -30,7 +30,7 @@ export function Learn() {
           {criteria.map((c) => (
             <li className="kv" key={c.id}>
               <span className="k">{c.term} <span className="freq">{c.frequency}</span></span>
-              <span>{c.plain} <em className="muted">{c.howToRecognize}</em></span>
+              <span className="v">{c.plain} <em>{c.howToRecognize}</em></span>
             </li>
           ))}
         </ul>
