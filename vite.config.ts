@@ -35,6 +35,17 @@ export default defineConfig({
       },
     }),
   ],
+  // Necessário para rodar atrás do proxy do Replit (workspace e Deployment).
+  server: {
+    host: true,
+    port: 5173,
+    allowedHosts: true,
+  },
+  preview: {
+    host: true,
+    port: Number(process.env.PORT) || 4173,
+    allowedHosts: true,
+  },
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],

@@ -1,0 +1,43 @@
+### Configuração do Replit para o app Alagille (Vite + React PWA)
+
+# Ambiente
+modules = ["nodejs-20"]
+entrypoint = "src/main.tsx"
+hidden = [".config", "dist", "node_modules"]
+
+# Comando do workspace (Run): inicia o servidor de desenvolvimento do Vite
+run = "npm run dev"
+
+[nix]
+channel = "stable-24_05"
+
+# Instala dependências automaticamente ao abrir o Repl
+[env]
+NODE_ENV = "development"
+
+# Mapeamento de porta do workspace (Vite dev -> 80)
+[[ports]]
+localPort = 5173
+externalPort = 80
+
+# Publicação (Deployments): Autoscale com build de produção + vite preview
+# O vite preview serve a pasta dist com fallback de SPA (rotas do React Router).
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["npm", "run", "preview"]
+
+[workflows]
+runButton = "Dev"
+
+[[workflows.workflow]]
+name = "Dev"
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm install"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"

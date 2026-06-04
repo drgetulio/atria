@@ -45,6 +45,18 @@ npm run build      # build de produção (PWA)
 npm run preview    # pré-visualizar o build
 ```
 
+## Publicar no Replit
+
+O repositório já inclui `.replit` configurado.
+
+1. **Importar**: em replit.com → *Create Repl* → *Import from GitHub* e selecione este repositório (ou faça upload da pasta).
+2. **Rodar (workspace)**: clique em **Run** — o Replit executa `npm install` e `npm run dev` (Vite na porta 5173, exposta na 80).
+3. **Publicar (Deployment)**: clique em **Deploy** → tipo **Autoscale** (já definido no `.replit`).
+   - Build: `npm run build`
+   - Run: `npm run preview` (serve `dist/` com fallback de SPA para as rotas do React Router).
+
+> O `vite.config.ts` já habilita `host` e `allowedHosts` para funcionar atrás do proxy do Replit. Caso prefira **Static Deployment**, aponte o *public dir* para `dist` e o build para `npm run build`.
+
 ## Governança de conteúdo
 
 Todo o conteúdo clínico deriva da diretriz e fontes citadas, é rastreável e versionado
