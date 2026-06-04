@@ -1,0 +1,78 @@
+{
+  "note": "A disponibilidade dos exames pode variar entre regiões do Brasil. Fonte: Quadro 1 da Diretriz SBP nº 22 (2026).",
+  "categories": [
+    {
+      "category": "Avaliação clínica",
+      "items": [
+        {
+          "exam": "Avaliação clínica dirigida (3 das 7 características)",
+          "purpose": "Identificar sinais sugestivos: colestase, cardiopatia, alterações esqueléticas, oculares, faciais, renais e vasculares.",
+          "susAccess": "available",
+          "susNote": "Disponível em todos os níveis de atenção, mas depende de conhecimento especializado do médico."
+        }
+      ]
+    },
+    {
+      "category": "Exames laboratoriais",
+      "items": [
+        {
+          "exam": "AST, ALT, GGT, FA, bilirrubinas (BT/BD), albumina, coagulograma, ureia e creatinina",
+          "purpose": "Avaliar colestase, função hepática e função renal.",
+          "susAccess": "available",
+          "susNote": "Disponíveis na rotina do SUS, com boa cobertura."
+        },
+        {
+          "exam": "Dosagem sérica de ácidos biliares",
+          "purpose": "Marcador complementar de colestase e de resposta terapêutica (útil em sintomas leves com colestase bioquímica).",
+          "susAccess": "unavailable",
+          "susNote": "Não disponível no SUS; acesso restrito a serviços privados/pesquisa."
+        }
+      ]
+    },
+    {
+      "category": "Exames de imagem",
+      "items": [
+        {
+          "exam": "Ultrassonografia de abdome total (rins e vias urinárias)",
+          "purpose": "Avaliar fígado, vias biliares e rins; auxilia diagnóstico diferencial.",
+          "susAccess": "limited",
+          "susNote": "Disponível, mas acesso limitado em alguns centros pela fila e qualidade técnica."
+        },
+        {
+          "exam": "Ecocardiograma",
+          "purpose": "Avaliar cardiopatia, especialmente estenose periférica da artéria pulmonar.",
+          "susAccess": "limited",
+          "susNote": "Disponível no SUS, mas o acesso pode ser demorado; varia por região."
+        },
+        {
+          "exam": "Radiografia de coluna",
+          "purpose": "Pesquisar vértebra 'em borboleta'.",
+          "susAccess": "available",
+          "susNote": "Disponível no SUS; acesso relativamente fácil."
+        }
+      ]
+    },
+    {
+      "category": "Oftalmologia",
+      "items": [
+        {
+          "exam": "Avaliação oftalmológica (fundo de olho + lâmpada de fenda)",
+          "purpose": "Pesquisar embriotóxon posterior e drusas do disco óptico.",
+          "susAccess": "limited",
+          "susNote": "Disponível no SUS, mas acesso limitado e dependente de referência especializada."
+        }
+      ]
+    },
+    {
+      "category": "Genética",
+      "items": [
+        {
+          "exam": "Painel genético específico para ALGS (JAG1, NOTCH2)",
+          "purpose": "Confirmação molecular e caracterização genotípica.",
+          "susAccess": "unavailable",
+          "susNote": "Não disponível no SUS; acesso restrito ao setor privado, alto custo."
+        }
+      ]
+    }
+  ]
+}

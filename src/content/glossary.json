@@ -1,0 +1,29 @@
+{
+  "terms": [
+    { "id": "colestase", "term": "Colestase", "plain": "A bile não flui bem do fígado para o intestino.", "recognize": "Icterícia persistente, fezes claras/esbranquiçadas (acolia), urina escura (colúria), coceira." },
+    { "id": "colestase-cronica", "term": "Colestase crônica", "plain": "Esse bloqueio da bile dura semanas ou meses.", "recognize": "Icterícia que não melhora + GGT e bilirrubina direta altas mantidas." },
+    { "id": "ictericia", "term": "Icterícia", "plain": "Pele e parte branca dos olhos ficam amareladas.", "recognize": "Observar a esclera (olhos) e a pele sob luz natural." },
+    { "id": "ductopenia", "term": "Ductopenia / escassez de ductos biliares", "plain": "Há poucos 'canais' que drenam a bile dentro do fígado.", "recognize": "Achado da biópsia hepática; mais evidente após os 6 meses." },
+    { "id": "prurido", "term": "Prurido colestático", "plain": "Coceira intensa causada pelo acúmulo de substâncias da bile.", "recognize": "Criança que se coça muito, com escoriações, perda de sono e irritabilidade." },
+    { "id": "acidos-biliares", "term": "Ácidos biliares séricos", "plain": "Componentes da bile dosados no sangue; sobem na colestase.", "recognize": "Exame de sangue (não disponível no SUS); marcador de gravidade e de resposta ao tratamento." },
+    { "id": "ggt", "term": "GGT (Gama-GT)", "plain": "Enzima do fígado que sobe quando há obstrução da bile.", "recognize": "Exame de sangue de rotina; valor alto reforça colestase." },
+    { "id": "fa", "term": "Fosfatase alcalina (FA)", "plain": "Enzima que também sobe na colestase (em crianças cresce com o osso, interpretar com cautela).", "recognize": "Exame de sangue de rotina." },
+    { "id": "bilirrubina-direta", "term": "Bilirrubina direta (BD)", "plain": "Fração da bilirrubina que aumenta quando a bile não escoa.", "recognize": "BD elevada = colestase (alarme em recém-nascido com icterícia prolongada)." },
+    { "id": "estenose-pulmonar", "term": "Estenose periférica da artéria pulmonar", "plain": "Estreitamento dos vasos que levam sangue do coração aos pulmões.", "recognize": "Sopro cardíaco; confirma-se no ecocardiograma." },
+    { "id": "cardiopatia-congenita", "term": "Cardiopatia congênita", "plain": "Defeito do coração presente desde o nascimento.", "recognize": "Sopro, cansaço às mamadas, cianose; ecocardiograma." },
+    { "id": "vertebra-borboleta", "term": "Vértebra 'em borboleta'", "plain": "Osso da coluna com fenda no meio, lembrando asas de borboleta.", "recognize": "Achado na radiografia de coluna (incidência de frente)." },
+    { "id": "embriotoxon", "term": "Embriotóxon posterior", "plain": "Anel/linha esbranquiçada na borda da córnea (frente do olho).", "recognize": "Visto pelo oftalmologista na lâmpada de fenda; isolado pode ocorrer em pessoas saudáveis." },
+    { "id": "drusas", "term": "Drusas do disco óptico", "plain": "Pequenos depósitos no nervo óptico, no fundo do olho.", "recognize": "Exame de fundo de olho pelo oftalmologista." },
+    { "id": "dismorfismo-facial", "term": "Dismorfismo facial", "plain": "Conjunto de feições típicas do rosto.", "recognize": "Face triangular, testa proeminente, queixo fino e pontudo, olhos fundos e afastados, nariz com ponta arredondada." },
+    { "id": "hipertelorismo", "term": "Hipertelorismo", "plain": "Olhos mais afastados do que o usual.", "recognize": "Observação clínica do rosto." },
+    { "id": "displasia-renal", "term": "Displasia renal", "plain": "Rim formado de maneira anormal.", "recognize": "Pode aparecer no ultrassom de abdome; às vezes assintomática." },
+    { "id": "acidose-tubular", "term": "Acidose tubular renal", "plain": "O rim não equilibra bem os ácidos do corpo.", "recognize": "Atraso de crescimento e alterações de eletrólitos no sangue." },
+    { "id": "alteracoes-vasculares", "term": "Alterações vasculares", "plain": "Vasos sanguíneos malformados (SNC/pulmões).", "recognize": "Risco de sangramento intracraniano; investigação por imagem quando indicada." },
+    { "id": "xantoma", "term": "Xantoma", "plain": "Caroços amarelados de gordura na pele (colesterol alto da colestase).", "recognize": "Vistos em mãos, cotovelos, joelhos e dobras; podem ser desfigurantes." },
+    { "id": "autossomica-dominante", "term": "Herança autossômica dominante", "plain": "Basta uma cópia alterada do gene; cada filho tem ~50% de chance de herdar.", "recognize": "Investigar história familiar (pais/irmãos afetados)." },
+    { "id": "jag1-notch2", "term": "JAG1 / NOTCH2 (via Notch)", "plain": "Genes que, quando alterados, causam a Síndrome de Alagille.", "recognize": "Confirmação por painel genético (não disponível no SUS)." },
+    { "id": "cirrose", "term": "Cirrose", "plain": "Cicatrização avançada e irreversível do fígado.", "recognize": "Fígado endurecido, sinais de hipertensão portal; o objetivo é evitar que se instale." },
+    { "id": "ibat", "term": "IBAT (inibidor do transportador de ácido biliar ileal)", "plain": "Remédio que reduz a recirculação dos ácidos biliares, aliviando a coceira.", "recognize": "Classe on-label para o prurido da ALGS (maralixibate, odevixibate)." },
+    { "id": "atresia-biliar", "term": "Atresia biliar", "plain": "Doença em que as vias biliares se fecham — principal diagnóstico a descartar no lactente com colestase.", "recognize": "Urgência: investigar precocemente; difere da Síndrome de Alagille." }
+  ]
+}

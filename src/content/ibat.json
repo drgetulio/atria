@@ -1,0 +1,31 @@
+{
+  "note": "Referência educacional baseada no Quadro 4 da Diretriz SBP nº 22 (2026) e em bulas/evidências internacionais. Não constitui prescrição. Verificar registro/indicação vigente na ANVISA. A indicação dos IBATs deve ser conduzida por gastroenterologista/hepatologista pediátrico.",
+  "criteria": [
+    { "topic": "Critério principal de indicação", "content": "Prurido colestático na Síndrome de Alagille." },
+    { "topic": "Marcador laboratorial complementar", "content": "Ácidos biliares séricos, quando disponíveis — úteis sobretudo em pacientes com sintomas leves e colestase bioquímica significativa." },
+    { "topic": "Perfil clínico de maior benefício", "content": "Colestase evidente, prurido intenso, presença de xantomas e sinais de progressão hepática sem cirrose estabelecida." },
+    { "topic": "Efeitos esperados", "content": "Melhora do prurido; melhora da colestase crônica e suas complicações; melhora do crescimento; melhora do sono e da qualidade de vida." },
+    { "topic": "Monitoramento terapêutico", "content": "Avaliação contínua da resposta clínica (prurido, colestase, ganho pôndero-estatural, sono e qualidade de vida) e dos níveis de ácidos biliares, quando possível." },
+    { "topic": "Ajuste de dose", "content": "Considerado em pacientes sem melhora clínica significativa ou sem redução dos ácidos biliares após o início do tratamento." },
+    { "topic": "Eventos adversos comuns", "content": "Diarreia, dor abdominal e alterações laboratoriais (ex.: transaminases, bilirrubinas)." },
+    { "topic": "Conduta frente a eventos adversos", "content": "Pode ser necessária a suspensão temporária ou a interrupção definitiva, conforme a gravidade e a persistência dos eventos." },
+    { "topic": "Continuidade em casos pediátricos", "content": "Em alguns casos, considera-se manter o uso mesmo após melhora clínica, pelo potencial benefício adicional no crescimento linear e ganho de peso." },
+    { "topic": "Estratégia de transição", "content": "Início preferencial por adição ao esquema vigente, com retirada gradual das medicações off-label conforme a resposta clínica." },
+    { "topic": "Atenção ao postergar o transplante", "content": "Cardiopatias congênitas graves não corrigíveis ou histórico de sangramento significativo em SNC podem limitar a postergação do transplante." }
+  ],
+  "drugs": [
+    {
+      "name": "Maralixibate (Livmarli)",
+      "fdaIndication": "Prurido colestático na ALGS",
+      "ageLabel": "≥ 3 meses (FDA)",
+      "dosing": "Início 190 mcg/kg 1×/dia; aumentar para 380 mcg/kg 1×/dia após ~1 semana, conforme tolerância; administrar 30 min antes da 1ª refeição do dia."
+    },
+    {
+      "name": "Odevixibate (Bylvay)",
+      "fdaIndication": "Prurido colestático na ALGS",
+      "ageLabel": "≥ 12 meses (FDA)",
+      "dosing": "40 mcg/kg/dia, titulável até 120 mcg/kg/dia."
+    }
+  ],
+  "regulatoryNote": "Posologia exibida como referência educacional (bula FDA). No Brasil, confirmar status de registro e indicação em bula vigente na ANVISA. A prescrição é responsabilidade do médico especialista."
+}

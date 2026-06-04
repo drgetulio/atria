@@ -1,0 +1,81 @@
+{
+  "rule": {
+    "thresholdDefault": 3,
+    "thresholdWithFamilyHistory": 2,
+    "note": "O diagnóstico clínico baseia-se em pelo menos 3 das 7 características clássicas; 2 são suficientes quando há história familiar de ALGS."
+  },
+  "criteria": [
+    {
+      "id": "cholestasis",
+      "term": "Colestase crônica",
+      "plain": "O fígado não consegue eliminar bem a bile.",
+      "simpleQuestion": "A criança tem icterícia que não passa, com fezes claras e urina escura?",
+      "howToRecognize": "Icterícia persistente, fezes claras (acolia), urina escura (colúria), coceira; nos exames, GGT e bilirrubina direta elevadas. Associa-se à escassez de ductos biliares (ductopenia), achado de biópsia mais comum após os 6 meses.",
+      "frequency": "89–100%",
+      "glossaryRefs": ["colestase", "ductopenia", "ggt", "bilirrubina-direta"]
+    },
+    {
+      "id": "cardiac",
+      "term": "Cardiopatia congênita",
+      "plain": "Defeito no coração presente desde o nascimento.",
+      "simpleQuestion": "A criança tem sopro no coração ou cardiopatia conhecida?",
+      "howToRecognize": "Tipicamente estenose periférica da artéria pulmonar (costuma dar sopro); também tetralogia de Fallot. Confirma-se no ecocardiograma.",
+      "frequency": "94%",
+      "glossaryRefs": ["estenose-pulmonar", "cardiopatia-congenita"]
+    },
+    {
+      "id": "skeletal",
+      "term": "Alterações esqueléticas",
+      "plain": "Ossos da coluna com formato alterado.",
+      "simpleQuestion": "A radiografia de coluna mostra vértebra 'em borboleta'?",
+      "howToRecognize": "Vértebra 'em borboleta' (osso da coluna com fenda no meio, visto na radiografia de frente); pode haver fraturas com pouco trauma.",
+      "frequency": "33–87%",
+      "glossaryRefs": ["vertebra-borboleta"]
+    },
+    {
+      "id": "ocular",
+      "term": "Alterações oftalmológicas",
+      "plain": "Achados típicos no exame dos olhos.",
+      "simpleQuestion": "O oftalmologista descreveu embriotóxon posterior?",
+      "howToRecognize": "Embriotóxon posterior (anel/linha esbranquiçada na borda da córnea), visto na lâmpada de fenda; drusas no disco óptico no fundo de olho.",
+      "frequency": "56–95%",
+      "glossaryRefs": ["embriotoxon", "drusas"]
+    },
+    {
+      "id": "facial",
+      "term": "Dismorfismos faciais característicos",
+      "plain": "Feições típicas do rosto.",
+      "simpleQuestion": "O rosto é triangular, com testa proeminente e queixo fino e pontudo?",
+      "howToRecognize": "Face triangular (testa larga, queixo fino e pontudo), fronte alta e proeminente, olhos fundos e afastados (hipertelorismo), nariz reto com ponta arredondada (bulbosa).",
+      "frequency": "70–96%",
+      "glossaryRefs": ["dismorfismo-facial", "hipertelorismo"]
+    },
+    {
+      "id": "renal",
+      "term": "Alterações renais",
+      "plain": "Rins malformados ou que funcionam mal.",
+      "simpleQuestion": "Há alteração nos rins no ultrassom ou acidose tubular renal?",
+      "howToRecognize": "Displasia renal (pode aparecer no ultrassom de abdome) e acidose tubular renal (atraso de crescimento e alterações de eletrólitos).",
+      "frequency": "20–73%",
+      "glossaryRefs": ["displasia-renal", "acidose-tubular"]
+    },
+    {
+      "id": "vascular",
+      "term": "Alterações vasculares",
+      "plain": "Vasos sanguíneos malformados.",
+      "simpleQuestion": "Há malformação vascular (SNC/pulmonar) ou histórico de sangramento intracraniano?",
+      "howToRecognize": "Malformações vasculares de SNC/pulmonares, com risco de sangramento dentro da cabeça (intracraniano).",
+      "frequency": "15%",
+      "glossaryRefs": ["alteracoes-vasculares"]
+    }
+  ],
+  "redFlag": {
+    "id": "redFlagCholestasis",
+    "label": "Colestase persistente e/ou biópsia com escassez de ductos biliares (ductopenia)",
+    "action": "Gatilho isolado de investigação: encaminhar ao gastroenterologista/hepatologista pediátrico mesmo sem fechar os critérios."
+  },
+  "differential": {
+    "ageMonthsThreshold": 6,
+    "alert": "Lactente com colestase: descartar atresia biliar com urgência. Nos primeiros meses pode ocorrer proliferação ductular, levando a diagnósticos diferenciais equivocados."
+  }
+}
