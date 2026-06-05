@@ -1,7 +1,31 @@
 {
   "app": "Alagille",
-  "contentVersion": "1.1.0",
+  "contentVersion": "1.2.0",
   "lastReviewed": "2026-06-04",
   "source": "Diretriz SBP nº 22 (23/01/2026) — Síndrome de Alagille em Pediatria no Brasil e os Inibidores do Transportador de Ácido Biliar Ileal (IBAT), complementada por fontes de alto impacto (GeneReviews, FDA, The Lancet, Hepatology).",
-  "disclaimer": "O Alagille é uma ferramenta de apoio à decisão clínica e educação médica. Não substitui o julgamento clínico, não estabelece diagnóstico definitivo nem prescreve tratamento. O diagnóstico e a indicação de IBATs devem ser confirmados por gastroenterologista/hepatologista pediátrico. Conteúdo destinado exclusivamente a profissionais de saúde."
+  "disclaimer": "O Alagille é uma ferramenta de apoio à decisão clínica e educação médica. Não substitui o julgamento clínico, não estabelece diagnóstico definitivo nem prescreve tratamento. O diagnóstico e a indicação de IBATs devem ser confirmados por gastroenterologista/hepatologista pediátrico. Conteúdo destinado exclusivamente a profissionais de saúde.",
+  "credit": {
+    "statement": "O conteúdo clínico deste aplicativo é baseado e adaptado da Diretriz da Sociedade Brasileira de Pediatria (SBP). O crédito do material original pertence integralmente aos seus autores, revisores e à SBP. Este app é uma ferramenta educacional independente e não substitui o documento oficial.",
+    "document": "Síndrome de Alagille em Pediatria no Brasil e os Inibidores do Transportador de Ácido Biliar Ileal (IBAT)",
+    "publication": "Diretriz da Sociedade Brasileira de Pediatria, nº 22, 23 de janeiro de 2026",
+    "isbn": "978-85-88520-68-4",
+    "authors": [
+      "Gilda Porta",
+      "Elisa de Carvalho",
+      "Bruno Pereira Ribeiro da Rocha",
+      "Melina Utz Melere",
+      "Irene Kazue Miura",
+      "Sandra M. F. Vieira"
+    ],
+    "reviewers": [
+      "Dirceu Solé",
+      "Luciana Rodrigues da Silva",
+      "Edson Ferreira Liberal"
+    ],
+    "affiliations": [
+      "Departamento Científico de Hepatologia da SBP (Gestão 2025-2028)",
+      "Departamento Científico de Gastroenterologia da SBP (Gestão 2025-2028)",
+      "Hepatologista Pediátrica, Hospital Infantil Santo Antônio, Porto Alegre"
+    ]
+  }
 }
