@@ -1,0 +1,27 @@
+{
+  "name": "atria-pediatric-gerd-video",
+  "version": "1.0.0",
+  "description": "Vídeo motion design retrô 4K sobre as principais preocupações do pediatra no refluxo gastroesofágico",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render PediatricGERD out/pediatric-gerd-4k.mp4 --codec=h264",
+    "render:4k": "remotion render PediatricGERD out/pediatric-gerd-4k.mp4 --codec=h264 --crf=16",
+    "still": "remotion still PediatricGERD out/poster.png --frame=60",
+    "upgrade": "remotion upgrade",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.379"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.379",
+    "@types/react": "19.0.0",
+    "@types/web": "^0.0.166",
+    "typescript": "5.5.4"
+  }
+}

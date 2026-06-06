@@ -1,0 +1,8 @@
+node_modules/
+.remotion/
+out/*
+# mantém os entregáveis renderizados no repositório
+!out/pediatric-gerd-4k.mp4
+!out/poster-intro.png
+.DS_Store
+*.log
